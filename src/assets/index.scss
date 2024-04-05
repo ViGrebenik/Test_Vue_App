@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:focus {
+		outline: none;
+	}
+	font-family: Roboto;
+	list-style: none;
+	font-family: 'Nunito', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	text-decoration: none;
+}
+body {
+	background-image: url('../../public/184e1436-a499-466f-895e-b8fd2983bc9a.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}

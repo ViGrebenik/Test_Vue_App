@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "prettierrc": "^0.0.0-5",
+    "sass": "^1.74.1",
     "vue": "^3.4.21",
     "vuex": "^4.1.0"
   },
