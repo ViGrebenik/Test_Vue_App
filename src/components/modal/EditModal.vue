@@ -1,13 +1,15 @@
 <template>
-	<div :class="$style.modalOverlay">
-		<div :class="$style.modal">
-			<input v-model="editedName" />
-			<button @click="save">
-				<img src="/public/svg/write.svg" alt="write" />
-			</button>
-			<span :class="$style.close" @click="close">✕</span>
+	<Teleport to="body">
+		<div :class="$style.modalOverlay">
+			<div :class="$style.modal">
+				<input v-model="editedName" />
+				<button @click="save">
+					<img src="/public/svg/write.svg" alt="write" />
+				</button>
+				<span :class="$style.close" @click="close">✕</span>
+			</div>
 		</div>
-	</div>
+	</Teleport>
 </template>
 
 <script>
@@ -15,7 +17,7 @@ export default {
 	props: ['item'],
 	data() {
 		return {
-			editedName: this.item.name,
+			editedName: this.item.name
 		}
 	},
 	methods: {
@@ -25,8 +27,8 @@ export default {
 		},
 		close() {
 			this.$emit('close')
-		},
-	},
+		}
+	}
 }
 </script>
 
